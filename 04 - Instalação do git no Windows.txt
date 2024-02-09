@@ -1,0 +1,10 @@
+No Linux e no Mac, o Git já vem instalado, mas no caso do Windows nós precisamos fazer isso manualmente.
+
+Para isso vamos ao o site do Git (https://git-scm.com/) e fazer o download para Windows e executar o arquivo.
+Enquanto instalamos irão aparecer algumas opções de configurações , vamos seguir com as configurações padrões da instalação mesmo, mas certifique-se de marcar a opção para adicionar o Git ao PATH do sistema, pois isso permite que você use o Git a partir da linha de comando.
+
+Depois de instalar, você pode verificar se o Git foi instalado corretamente abrindo o prompt de comando (usando o comando Win + R, digite cmd e pressione Enter / ou abra ele pelo menu) e digitando o comando abaixo:
+
+	git --version
+
+Se o Git foi instalado corretamente, você verá a versão do Git instalada.

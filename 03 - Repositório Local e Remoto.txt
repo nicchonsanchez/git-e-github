@@ -1,0 +1,5 @@
+O professor fez uma explicação sobre o que é um repositório remoto (que fica na nuvem) e um repositório local (que fica na máquina/cumputador).
+
+Repositório Local: Um repositório local é uma cópia do projeto que está armazenada no seu computador. É onde você faz alterações no código-fonte, cria novos arquivos, realiza commits para salvar suas alterações e gerencia todo o histórico de desenvolvimento do projeto. O repositório local é essencialmente o diretório do seu projeto onde você executa comandos Git para interagir com o controle de versão.
+
+Repositório Remoto: Um repositório remoto é uma versão do seu projeto que está armazenada em um servidor remoto, como o GitHub, o GitLab ou o Bitbucket. Ele serve como um ponto central para colaboração, permitindo que várias pessoas contribuam para o projeto, sincronizem suas alterações e compartilhem o código. Você pode enviar (push) suas alterações do repositório local para o repositório remoto e também baixar (pull) as alterações feitas por outros colaboradores do projeto. O repositório remoto é onde o código é armazenado de forma centralizada e acessível a todos os membros da equipe.
