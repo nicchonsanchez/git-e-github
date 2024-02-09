@@ -1,0 +1,21 @@
+Quando damos um commit nos arquivos, significa que acoplamos as mudanças feitas a um conjunto que nomeamos com o título que damos ao Commit. Mas essas alterações ainda não foram enviadas para o servidor remoto (a núvem, no caso o GitHub).
+
+
+
+COMANDOS:
+
+	git push
+
+Com o git push (empurrar) nós enviamos as alterações para a núvem, logo poderão ser vistas no GitHub, que é o servidor remoto que estamos usando.
+
+
+
+	git fetch
+
+Faz Download de objetos e arbitros de outro repositório. Ele faz buscar da núvem informações de alterações feitas lá que ainda não foram atualizados nos arquivos da minha máquina.
+
+
+
+	git pull
+
+Serve para puxar (pull) os arquivos que estão na núvem atualizados. Num caso em que alterações são feitas por mais de um desenvolvedor, ou então mais de um dispositivo, quando atualizamos os arquivos por um dispositivo e enviamos para a núvem, precisamos atualizar o arquivos nos outros dispositivos. Com o comando pull fazemos exatamente isso: atualizamos os arquivos da máquina com base nos arquivos que estão na núvem.

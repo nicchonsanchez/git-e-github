@@ -1,0 +1,58 @@
+No VS Code existem algumas ferramentas que nos auxiliam com o Git.
+
+Quando os arquivos apresentam a letra U, de untracked na barra lateral onde ficam os arquivos, é porque o arquivo ainda não está presente na nuvem, logo se você procurar no GitHub, não os verá na pasta.
+
+Quando mostram a letra M, de modified, significa que o arquivo foi modificado e a modificação não foi enviada para a nuvem.
+
+
+
+COMANDOS:
+
+	git status
+
+Com o git status conseguimos ver o quais arquivos foram modificados.
+
+
+
+	git diff
+
+Apresenta quais alterações foram feitas no arquivo. o - (menos) indica que a linha foi excluida, o + (mais) indica que foi alterada
+Para sair da visualização aperte Q (de quit).
+
+
+
+	git --help
+
+Mostra uma llista de comandos explicando o que cada um faz, semelhante ao comando help do CMD. Pode ser usado com outros comandos, como o próprio diff, usando:
+git diff --help
+Onde será mostrado as opções desse comando.
+
+
+
+	git add
+
+Com este comando colocamos os arquivos para Stage Changes, logo eles serão enviados para a núvem no próximo envio que fizer. Se escrever o . (ponto) depois do comando, assim:
+	git add .
+Ele adicionará todos os arquivos criados e editados para a lista do Stage Changes. Caso queira adicionar um ou mais arquivos específicos, basta escrever o nome deles invés de . (ponto), como abaixo:
+	git add index.html quem-somos.html /css/style.css
+
+
+
+	git restore --staged
+
+Faz o inverso do git add, ele retira os itens do Stage Changes. E, semelhantemente, com o . (ponto), como abaixo, você faz isso com todos os arquivos.
+	git restore --staged .
+Ou com apenas alguns arquivos específicos:
+	git restore --staged quem-somos.html
+
+
+
+	git commit -m "Título do commit"
+
+Gera um commit com os arquivos adicionados ao Stage Changes. O -m é obrigatório em todos os commits, juntamente com o título, onde você pode colocar um título sobre as alterações feitas. E o título ficará salvo num histórico onde ficará mais fácil de saber o que você fez em cada commit e poderá verificar quais alterações fez em cada commit.
+
+
+
+	git log
+
+Mostra o histórico de commits realizados

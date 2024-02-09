@@ -1,0 +1,29 @@
+Aberto o VS Code na pasta repositories, abra o terminal usando Ctrl + J
+
+Agora vamos clonar um projeto já existente na nuvem.
+Vá ao GitHub e entre na pasta que deseja clonar. Clique no botão verda com icone de download escrito Code, selecione a opção HTTPS e copie o link, pode copiá-lo clicando no botão ao lado dele com uma prancheta.
+
+Vá ao terminal, no caso estamos usando o do VS code, e digite o código abaixo com o link copiado (o link abaixo é o de exemplo que o prof usou na aula):
+
+	git clone https://github.com/Maransatto/teste-de-git.git
+
+
+
+Após isso o terminal irá perguntar qual é a maneira de fazer a autenticação que será usado no repositório via HTTPS na máquina. Dê apenas um enter que já será selecionado a opção padrão, que é Web browser (opção 1).
+Será aberto uma aba no navegador pedindo para confirmar a autenticação. No caso do professor, ele já estava logado na conta do GitHub dele.
+Ao voltado para o VS Code, já poderá ser visto que a clonagem foi realizada. Com o comando ls, como abaixo, poderá ser visto as pastas dentro do repositório.
+
+	ls
+
+
+
+Ao fazer alterações nos arquivos, para fazer a alteração da máquina para o servidor remoto faça os comandos abaixo:
+
+	git add .
+	git commit -m "Aqui coloque um título sobre as alterações que fez"
+
+Agora enviaremos o commit para a núvem (para o GitHub, servidor remoto):
+
+	git push -u origin master
+
+

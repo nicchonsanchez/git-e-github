@@ -1,0 +1,27 @@
+Após instalado o Git precisamos configurá-lo para informar qual é o usuário que será utilizado e qual é o email principal da conta vinculado ao Git local na máquina.
+
+Para visualizar as configuração do Git que já estão intaladas na máquina usamos o comando:
+
+	git config --list
+
+
+
+Para definir o usuário e o email usamos:
+
+	git config --global user.name "Nicchon Sanchez Pinto"
+	git config --global user.email "contato@nicchon.com"
+
+	Obs: 'global' é porque é uma configuração global
+
+
+
+Já definidos o usuário e email, vamos criar um diretório de repositório. Entre no diretório onde deseja criar a pasta e para criar a pasta use o comando mkdir e o nome desejado e entramos na pasta com o comando cd:
+
+	mkdir repositories
+	cd repositories
+
+Agora basta abrir o Visual Studio Code (ou outro software de programação de sua preferência) na pasta pois nos passos seguites usaremos (por opção) o Power Shell. Para abrir o VS Code nesta pasta, use o código:
+
+	code .
+
+	Obs: tem que usar o ponto no final mesmo. Code, espaço e ponto.

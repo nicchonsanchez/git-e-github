@@ -1,0 +1,39 @@
+O Git Graph é uma ferramenta de extensão do VS Code. Com ela podemos ter uma visão clara dos branches. Com um gráfico ele mostra os commits e em qual branch cada um está e as atrasições deles, quando mandamos um arquivo e/ou alterações de um branch para o outro para fazer essa mesclagem entre os branches quando terminamos de criar uma funcionalidade nova em um deles.
+
+Um "pull request" (pedido de pull) é uma funcionalidade do Git e de plataformas de hospedagem de código, como GitHub, GitLab e Bitbucket. É uma maneira de propor mudanças em um repositório para o mantenedor do projeto revisar, discutir e potencialmente incorporar no código principal (branch principal) do repositório.
+
+
+___________________________________________________
+
+Abaixo uma explicação melhor feita pelo ChatGPT:
+
+Aqui está um resumo do funcionamento do git pull request:
+
+### 1. Fork do Repositório:
+O primeiro passo é fazer um fork do repositório do projeto no qual você deseja contribuir. Isso cria uma cópia do repositório original sob sua própria conta no GitHub.
+
+### 2. Criação de uma Nova Branch:
+Após fazer o fork, você cria uma nova branch no seu repositório fork. Essa branch será usada para implementar as mudanças que você deseja propor.
+
+### 3. Implementação das Mudanças:
+Nesta etapa, você faz as alterações necessárias no código dentro da sua nova branch. Isso pode envolver adicionar, modificar ou excluir arquivos.
+
+### 4. Commits das Mudanças:
+Depois de implementar as mudanças, você faz commits dessas mudanças na sua branch local. Cada commit representa uma alteração específica que você fez no código.
+
+### 5. Push da Branch para o Repositório Fork:
+Uma vez que você tenha feito os commits das mudanças na sua branch local, você envia esses commits para o repositório fork no GitHub. Isso é feito usando o comando `git push`.
+
+### 6. Criação do Pull Request:
+Depois de ter enviado a sua branch com as mudanças para o seu repositório fork no GitHub, você pode criar um pull request. Isso é feito na interface do GitHub, onde você seleciona a sua branch e a branch de destino (normalmente a branch principal do repositório original). Você também fornece um título e uma descrição para descrever suas mudanças e por que elas são relevantes.
+
+### 7. Revisão e Discussão:
+Depois de criar o pull request, outros colaboradores do projeto e o mantenedor do projeto podem revisar o código, fazer comentários, sugerir alterações e discutir as mudanças propostas. Esta é uma parte importante do processo de contribuição, onde feedback é fornecido e eventuais problemas são identificados e resolvidos.
+
+### 8. Integração das Mudanças:
+Se o mantenedor do projeto estiver satisfeito com as mudanças propostas, ele pode mesclar (merge) o pull request na branch principal do repositório original. Isso incorpora suas alterações ao código principal do projeto.
+
+### 9. Atualização do Repositório Local:
+Depois que o pull request é mesclado, você pode sincronizar o seu repositório local com as mudanças aceitas usando `git pull` ou `git fetch` e `git merge`.
+
+Esses são os passos básicos envolvidos no processo de criação e conclusão de um pull request no GitHub. É uma maneira eficaz de colaborar em projetos de código aberto e de contribuir com a comunidade de desenvolvimento de software.

@@ -1,0 +1,75 @@
+O branch é como se fossem versões da aplicação (ou site). O master é no caso como o branch em produção.
+Os branches são como se fossem ramos de uma arvore, onde o master, que é o principal, o da produção, fosse o tronco.
+
+
+COMANDOS:
+
+	git branch
+
+Serve para listar, criar ou deletar branches no repositório Git.
+
+
+
+	git checkout
+
+O comando git checkout é usado principalmente para navegar entre branches, criar branches e também para desfazer modificações em arquivos.
+
+
+
+
+Com o branch -c fazemos uma cópia de um branch, e é assim que criamos um. Um novo branch é sempre uma cópia de outro branch, geralmente do master, que é a aplicação que está em produção, então criamos outro para fazer algum deste, ou para trabalhar no desenvolvimento de uma aplicação.
+
+
+
+	git branch -c master develop
+
+Aqui estamos criando uma cópia do branch master e estamos dando o nome de develop para esta cópia.
+
+
+
+	git branch -l
+
+Com este comando nós listamos os branches que temos disponíveis no nosso repositório.
+
+
+
+	git branch -la (ou git branch -l -a)
+
+Mostrará, juntamente com os branches que temos no repositório, os branches disponíveis na nuvem
+
+
+
+	git branch -lav (ou git branch -l -a -v)
+
+Mostrará, além dos branches disponíveis no repositório e na núvem, o "verboso", o último commit de cada um.
+
+
+No caso dos branches master e develop, estarão iguais pois o develop foi criado apartir do master.
+Com o comando:
+
+	git checkout develop
+
+Estaremos mudando o branch ativo para o develop. Logo os commits serão feitos para este novo branch.
+
+
+
+	git checkout -b cadastro-usuarios
+
+Com o checkout -b (de branch) iremos criar um novo branch a partir do branch ativo atual. Neste caso estamos criando um branch chamado cadastro-usuarios para criar uma nova funcionalidade ao meu site ou app ou o que quer que seja.
+
+
+
+Agora, se eu, por exemplo, criar um arquivo novo, ele será visualizado apenas quando estivermos no branch cadastro-usuarios.
+Se dermos um 'git checkout develop' o arquivo novo desaparecerá da lista de arquivos na barra lateral do VS Code, mas quando dermos um 'git checkout cadastro-usuario' novamente, o arquivo aparecerá. Isso acontece pois este novo arquivo, até então, pertence apenas a este branch.
+
+
+Se eu der um 'git push' nestes branches novos, ocorrerá um erro, pois não indiquei qual é o nome destes branches lá na nuvem, não indiquei um branch para eles. Então terei de realizar o seguinte comando:
+
+	git push --set-upstream origin cadastro-usuario
+	(ou git push -u origin cadastro-usuario)
+
+Com isto nós jogamos este novo branch, cadastro-usuario, na núvem.
+
+	git push -u origin develop
+
+E com este mandamos para a nuvem o branch develop

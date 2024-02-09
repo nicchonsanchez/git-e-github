@@ -1,0 +1,82 @@
+1. Configurar uma chave SSH (se ainda não estiver configurada):
+Se você ainda não configurou uma chave SSH, precisa criar uma para se autenticar no GitHub sem precisar digitar sua senha toda vez. Você pode fazer isso seguindo os passos abaixo:
+
+No LINUX/MAC:
+Abra um terminal.
+Verifique se você já tem uma chave SSH digitando o seguinte comando:
+
+	ls -al ~/.ssh
+
+
+
+Se não houver chaves SSH listadas, você pode gerar uma nova usando o seguinte comando:
+
+	ssh-keygen -t rsa -b 4096 -C "seu_email@example.com"
+
+
+
+Substitua "seu_email@example.com" pelo seu endereço de e-mail associado à sua conta do GitHub.
+Pressione Enter para aceitar o local padrão para salvar a chave.
+Digite uma senha segura ou pressione Enter para deixá-la em branco.
+Após a conclusão, a chave SSH será gerada e estará localizada em ~/.ssh/id_rsa (chave privada) e ~/.ssh/id_rsa.pub (chave pública).
+
+
+
+No WINDOWS (usando Git Bash):
+Abra o Git Bash.
+Verifique se você já tem uma chave SSH digitando o seguinte comando:
+
+	ls -al ~/.ssh
+
+
+
+Se não houver chaves SSH listadas, você pode gerar uma nova usando o seguinte comando:
+
+	ssh-keygen -t rsa -b 4096 -C "seu_email@example.com"
+
+
+
+Substitua "seu_email@example.com" pelo seu endereço de e-mail associado à sua conta do GitHub.
+Pressione Enter para aceitar o local padrão para salvar a chave.
+Digite uma senha segura ou pressione Enter para deixá-la em branco.
+Após a conclusão, a chave SSH será gerada e estará localizada em ~/.ssh/id_rsa (chave privada) e ~/.ssh/id_rsa.pub (chave pública).
+
+
+
+
+
+
+
+2. Adicionar a chave SSH ao seu perfil do GitHub:
+Copie a chave pública para a área de transferência. Você pode fazer isso com o seguinte comando:
+
+	cat ~/.ssh/id_rsa.pub
+
+
+
+Acesse sua conta do GitHub.
+No canto superior direito, clique na sua foto de perfil e selecione "Settings" (Configurações).
+No menu lateral esquerdo, clique em "SSH and GPG keys" (Chaves SSH e GPG).
+Clique em "New SSH key" (Nova chave SSH).
+Cole a chave SSH na caixa de texto e dê um título descritivo (por exemplo, "Chave SSH do meu computador pessoal").
+Clique em "Add SSH key" (Adicionar chave SSH).
+
+
+
+
+
+
+3. Clonar o repositório do GitHub usando SSH:
+Abra um terminal.
+Navegue até o diretório onde deseja clonar o repositório.
+No GitHub, vá para o repositório que deseja clonar.
+Clique no botão verde "Code" (ou "Clone" se estiver em um repositório específico) e selecione "SSH".
+Copie o URL SSH fornecido.
+No terminal, digite o seguinte comando para clonar o repositório:
+
+	git clone <URL_do_repositório>
+
+
+
+Substitua <URL_do_repositório> pelo URL SSH que você copiou.
+Pressione Enter e o Git irá clonar o repositório para o diretório atual.
